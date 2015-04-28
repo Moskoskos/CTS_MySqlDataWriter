@@ -1,2 +1,7 @@
 C:\Users\840WS\Google Drive\Studio Project\CTS_MySqlDataWriter\CTS_MySqlDataWriter\CTS_MySqlDataWriter\bin\Debug\CTS_MySqlDataWriter.exe.config
 C:\Users\840WS\Documents\GitHub\CTS_MySqlDataWriter\CTS_MySqlDataWriter\bin\Debug\CTS_MySqlDataWriter.exe.config
+C:\Users\840WS\Documents\GitHub\CTS_MySqlDataWriter\CTS_MySqlDataWriter\bin\Debug\CTS_MySqlDataWriter.exe
+C:\Users\840WS\Documents\GitHub\CTS_MySqlDataWriter\CTS_MySqlDataWriter\bin\Debug\CTS_MySqlDataWriter.pdb
+C:\Users\840WS\Documents\GitHub\CTS_MySqlDataWriter\CTS_MySqlDataWriter\obj\Debug\CTS_MySqlDataWriter.csprojResolveAssemblyReference.cache
+C:\Users\840WS\Documents\GitHub\CTS_MySqlDataWriter\CTS_MySqlDataWriter\obj\Debug\CTS_MySqlDataWriter.exe
+C:\Users\840WS\Documents\GitHub\CTS_MySqlDataWriter\CTS_MySqlDataWriter\obj\Debug\CTS_MySqlDataWriter.pdb

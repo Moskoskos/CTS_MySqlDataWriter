@@ -100,6 +100,7 @@ namespace ConsoleApplication1
                             cmd.Parameters.AddWithValue("@value", valueIn);
                             // Execute the query
                             cmd.ExecuteNonQuery();
+                            CloseConnection();
                         }
                     }
                     return true;

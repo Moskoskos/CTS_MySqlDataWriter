@@ -17,7 +17,7 @@ namespace ConsoleApplication1
             
             double value = 0;
             int count = 0;
-            int days = 0;
+            int days = -720;
 
             try
             {
@@ -31,10 +31,14 @@ namespace ConsoleApplication1
                     DbConnect con2 = new DbConnect();
                     value = con2.Temperature(count);
                     con2.PopulateHIstorian(value, days);
+                    Console.WriteLine(value + " added");
+
                     
                     count++;
-                    days--;
+                    days++;
+                    
                 }
+
                 Console.WriteLine("Data added");
             }
             catch (Exception ex)
