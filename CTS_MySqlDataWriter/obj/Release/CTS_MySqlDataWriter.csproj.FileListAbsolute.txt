@@ -1,0 +1,7 @@
+C:\Users\W840S\Source\Repos\CTS_MySqlDataWriter\CTS_MySqlDataWriter\bin\Release\CTS_MySqlDataWriter.exe.config
+C:\Users\W840S\Source\Repos\CTS_MySqlDataWriter\CTS_MySqlDataWriter\bin\Release\CTS_MySqlDataWriter.exe
+C:\Users\W840S\Source\Repos\CTS_MySqlDataWriter\CTS_MySqlDataWriter\bin\Release\CTS_MySqlDataWriter.pdb
+C:\Users\W840S\Source\Repos\CTS_MySqlDataWriter\CTS_MySqlDataWriter\bin\Release\MySql.Data.dll
+C:\Users\W840S\Source\Repos\CTS_MySqlDataWriter\CTS_MySqlDataWriter\obj\Release\CTS_MySqlDataWriter.csprojResolveAssemblyReference.cache
+C:\Users\W840S\Source\Repos\CTS_MySqlDataWriter\CTS_MySqlDataWriter\obj\Release\CTS_MySqlDataWriter.exe
+C:\Users\W840S\Source\Repos\CTS_MySqlDataWriter\CTS_MySqlDataWriter\obj\Release\CTS_MySqlDataWriter.pdb

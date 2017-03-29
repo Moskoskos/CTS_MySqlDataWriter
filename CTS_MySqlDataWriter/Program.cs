@@ -22,7 +22,6 @@ namespace ConsoleApplication1
             try
             {
                 DbConnect con1 = new DbConnect();
-                con1.DeleteRecordsInTable();
                 //con1.DisableTimeStamp();
                 Console.WriteLine("Writing Data");
                 
@@ -30,7 +29,7 @@ namespace ConsoleApplication1
                 {
                     DbConnect con2 = new DbConnect();
                     value = con2.Temperature(count);
-                    con2.PopulateHIstorian(value, days);
+                    con2.PopulateHIstorian(value, days, 2, 1);
                     Console.WriteLine(value + " added");
 
                     

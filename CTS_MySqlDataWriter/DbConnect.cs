@@ -23,10 +23,10 @@ namespace ConsoleApplication1
         //The server settings for logging on to the MySql Database
         public DbConnect()
         {
-            server = "127.0.0.1";
-            database = "cts";
-            uid = "root";
-            password = "";
+            server = "192.168.1.102";
+            database = "watermentdb";
+            uid = "LANRemote";
+            password = ".s1sklco287k.!";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
@@ -79,7 +79,7 @@ namespace ConsoleApplication1
             }
             return true;
         }
-        public bool PopulateHIstorian(double valueIn, int days)
+        public bool PopulateHIstorian(double valueIn, int days, int equipmentId, int facilityID)
         {
             //
             //Source:
@@ -88,7 +88,7 @@ namespace ConsoleApplication1
                 
                 try
                 {
-                    string query = "INSERT INTO historian(datetime_recorded,value)VALUES(@datetime,@value);";
+                    string query = "INSERT INTO measurements(Timestamp,ProcessValue,equipments_Id,equipments_facilities_Id)VALUES(@datetime,@value,@equip,@facility);";
                     //Checks if connection is open
                     if (this.OpenConnection() == true)
                     {
@@ -98,6 +98,8 @@ namespace ConsoleApplication1
                             // The paramteres mentioned in VALUES is here given a value
                             cmd.Parameters.AddWithValue("@datetime", DateTime.Now.AddDays(days));
                             cmd.Parameters.AddWithValue("@value", valueIn);
+                            cmd.Parameters.AddWithValue("@equip", equipmentId);
+                            cmd.Parameters.AddWithValue("@facility", facilityID);
                             // Execute the query
                             cmd.ExecuteNonQuery();
                             CloseConnection();
@@ -116,7 +118,7 @@ namespace ConsoleApplication1
         {
             double temp = 0.0;
             double x = days;
-            temp = (20 * Math.Cos(((2 * Math.PI * x) / 365) - ((80 * Math.PI) / 73) + 13));
+            temp = (40 * Math.Cos(((2 * Math.PI * x) / 365) - ((80 * Math.PI) / 73) + 13));
             temp = Math.Round(temp, 1);
             return temp;
         }
